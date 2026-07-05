@@ -1,0 +1,96 @@
+aid: florence-ebinder
+name: Florence Healthcare
+review:
+  question: Does Florence Healthcare expose a documented public WebSocket API?
+  answer: false
+  date: '2026-07-05'
+  reviewer: API Evangelist
+  asyncapiSpecCreated: false
+  asyncapiScopeNote: |
+    No AsyncAPI document was authored. Florence Healthcare does not publish any
+    public API description at all - REST or otherwise - so there is no documented
+    transport, request/response or server-push, to model. Florence describes an
+    "open API" for eBinders, eTMF, and SiteLink in marketing and press material,
+    but the actual interface (endpoints, protocol, authentication, base URL) is
+    disclosed only to partners and customers under its integration and partnership
+    programs. There is no evidence of a WebSocket (ws:// or wss://) surface, and
+    nothing public to author an AsyncAPI document from.
+findings:
+  summary: |
+    Florence Healthcare does not publish a documented public WebSocket API, nor a
+    documented public REST API. Florence is a clinical-trial eRegulatory and site
+    enablement company: eBinders is an electronic investigator site file (eISF)
+    and participant binder platform, eTMF manages the sponsor-side trial master
+    file, and SiteLink connects 10,000+ investigator sites to sponsors and CROs.
+    Florence repeatedly describes an "open API" that supports connected management
+    of roles and permissions, inbound and outbound document exchange, and document
+    status reporting. However, that API is partner- and customer-gated: it is
+    provisioned through Florence's integration/partnership programs, and no public
+    developer portal, API reference, OpenAPI description, base URL, or
+    authentication documentation is published. Third-party trackers (e.g.
+    apitracker.io) list a "Native REST API" for Florence but their developer-portal
+    and API-reference links resolve to placeholder pages, confirming there is no
+    open public documentation. No realtime, bidirectional, or streaming WebSocket
+    endpoint is documented anywhere.
+  accessModel: |
+    Partner/customer-gated. The API surface is described publicly only in marketing
+    and press terms ("open API", "SiteLink API"). Concrete interface details are
+    shared with integration partners and customers, not through a self-service
+    public developer portal. Pricing for the underlying products is not published;
+    it is quoted by Florence sales, and sponsors typically reimburse sites per
+    trial.
+  openSource: |
+    No open-source API client or SDK is published. The FlorenceHC GitHub
+    organization (github.com/FlorenceHC) contains a small set of general-purpose
+    and archived forked repositories (Rails/Node components, SAML, request-signing
+    utilities) - none of which are the eBinders/eTMF/SiteLink product API or an
+    official SDK.
+  transports:
+    - protocol: REST
+      scheme: https
+      baseURL: null
+      documented: false
+      note: Florence describes an "open API" (document exchange, roles/permissions, document status) but publishes no public API reference, base URL, or authentication docs. Access is partner/customer-gated.
+    - protocol: WebSocket
+      scheme: wss
+      documented: false
+      note: No WebSocket endpoint is documented anywhere in Florence's public material as of the review date.
+  endpointsModeled: true
+  endpointsModeledNote: |
+    The logical APIs captured in apis.yml (Documents/Binders, Signatures,
+    Studies/Sites, Users/Permissions, Tasks/Workflows) are MODELED from Florence's
+    public statements about its open API and SiteLink capabilities. No real
+    endpoint paths, base URL, or OpenAPI description are published by Florence, so
+    none were fabricated. No openapi/, plans/, rate-limits/, finops/, or
+    collections/ artifacts were created because no sourced technical detail exists.
+sources:
+  - url: https://www.florencehc.com/products/ebinders/
+    type: Documentation
+    note: eBinders eISF / participant binder product page.
+  - url: https://www.florencehc.com/florence-ebinders-faq/
+    type: Documentation
+    note: FAQ states eBinders "has an open API which means it can integrate with all other software systems that are open to integrate." No technical detail.
+  - url: https://www.florencehc.com/products/sitelink/
+    type: Documentation
+    note: SiteLink product page - open API for document exchange across the site network.
+  - url: https://www.florencehc.com/press-release/florence-healthcare-opens-its-sitelink-platform-to-integrate-with-any-vendor-to-further-mission-of-creating-a-link-between-every-clinical-research-site-and-sponsor-in-the-world/
+    type: PressRelease
+    note: Announcement that SiteLink API supports connected roles/permissions, inbound/outbound document exchange, and document status reporting.
+  - url: https://www.florencehc.com/florence-etmf-faq/
+    type: Documentation
+    note: eTMF FAQ - eTMF "has open APIs" for integration with external systems.
+  - url: https://apitracker.io/a/florencehc
+    type: Analysis
+    note: Third-party tracker lists a "Native REST API"; its developer-portal and API-reference links resolve to placeholder pages - confirming no open public docs, base URL, sandbox, webhooks, or OpenAPI.
+  - url: https://github.com/FlorenceHC
+    type: SourceCode
+    note: FlorenceHC GitHub org - only general-purpose and archived forked repos; no product API client, SDK, or spec.
+actions:
+  asyncapiPath: null
+  apisYmlUpdated: true
+  reason: |
+    No WebSocket surface exists and Florence publishes no public API description
+    of any kind. The apis.yml documents the provider honestly as a
+    partner/customer-gated "open API" with logical APIs modeled from public
+    statements (endpointsModeled: true). No AsyncAPI document was created because
+    there is no public transport - server-push or otherwise - to model.

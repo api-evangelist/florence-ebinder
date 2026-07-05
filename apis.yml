@@ -1,0 +1,147 @@
+aid: florence-ebinder
+url: https://raw.githubusercontent.com/api-evangelist/florence-ebinder/refs/heads/main/apis.yml
+name: Florence Healthcare
+kind: company
+description: Florence Healthcare provides eRegulatory and clinical-trial site
+  enablement software for research sites, sponsors, and CROs. Its eBinders product
+  is an electronic investigator site file (eISF) and participant binder platform
+  that replaces paper regulatory binders with structured, compliant, 21 CFR Part 11
+  workflows; eTMF manages the sponsor-side trial master file; and SiteLink connects
+  a network of 10,000+ investigator sites across 44+ countries to sponsors and CROs
+  for remote site access, monitoring, document exchange, and source data
+  verification. Florence describes an "open API" for eBinders, eTMF, and SiteLink
+  that supports connected management of roles and permissions, inbound and outbound
+  document exchange, and document status reporting across regulatory and source
+  documents. Access to the API is partner- and customer-gated - it is granted
+  through Florence's integration and partnership programs rather than a
+  self-service public developer portal, and no public API reference, OpenAPI
+  description, or base URL is published as of this writing.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Clinical Trials
+- eRegulatory
+- eISF
+- eBinders
+- eTMF
+- Clinical Research
+- Healthcare
+- Life Sciences
+- Document Management
+- Partner API
+created: '2026-07-05'
+modified: '2026-07-05'
+specificationVersion: '0.19'
+apis:
+- aid: florence-ebinder:florence-documents-binders-api
+  name: Florence Documents and Binders API
+  tags:
+  - Documents
+  - Binders
+  - eISF
+  - Document Exchange
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.florencehc.com/products/ebinders/
+  endpointsModeled: true
+  properties:
+  - url: https://www.florencehc.com/products/ebinders/
+    type: Documentation
+  - url: https://www.florencehc.com/florence-ebinders-faq/
+    type: Documentation
+  description: 'Modeled logical API for the eBinders investigator site file (eISF)
+    and participant binder structure - creating and organizing binders, folders, and
+    placeholders, and inbound/outbound exchange of regulatory and source documents
+    between sites, sponsors, and CROs. Endpoints are modeled from Florence''s public
+    statements about its "open API" and SiteLink document-exchange capability; no
+    public API reference or base URL is published. Partner/customer-gated access.'
+- aid: florence-ebinder:florence-signatures-api
+  name: Florence Signatures and Compliance API
+  tags:
+  - Signatures
+  - eSignature
+  - 21 CFR Part 11
+  - Compliance
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.florencehc.com/products/ebinders/
+  endpointsModeled: true
+  properties:
+  - url: https://www.florencehc.com/products/ebinders/
+    type: Documentation
+  description: Modeled logical API for compliant electronic signature and audit-trail
+    workflows on regulatory documents (21 CFR Part 11 / GxP), including signature
+    requests, signing, and document status/compliance reporting. Endpoints are
+    modeled from Florence's public product descriptions; no public API reference is
+    published. Partner/customer-gated access.
+- aid: florence-ebinder:florence-studies-sites-api
+  name: Florence Studies and Sites API
+  tags:
+  - Studies
+  - Sites
+  - SiteLink
+  - Document Status
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.florencehc.com/products/sitelink/
+  endpointsModeled: true
+  properties:
+  - url: https://www.florencehc.com/products/sitelink/
+    type: Documentation
+  - url: https://www.florencehc.com/press-release/florence-healthcare-opens-its-sitelink-platform-to-integrate-with-any-vendor-to-further-mission-of-creating-a-link-between-every-clinical-research-site-and-sponsor-in-the-world/
+    type: Documentation
+  description: Modeled logical API over the SiteLink network for managing studies,
+    investigator sites, and cross-site document status reporting for regulatory and
+    source documents involved in clinical research. Endpoints are modeled from
+    Florence's SiteLink "open API" announcement; no public API reference or base URL
+    is published. Partner/customer-gated access.
+- aid: florence-ebinder:florence-users-permissions-api
+  name: Florence Users and Permissions API
+  tags:
+  - Users
+  - Roles
+  - Permissions
+  - Access Control
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.florencehc.com/products/sitelink/
+  endpointsModeled: true
+  properties:
+  - url: https://www.florencehc.com/products/sitelink/
+    type: Documentation
+  description: Modeled logical API for connected management of users, roles, and
+    permissions across the eBinders/SiteLink platform - the "connected management of
+    roles and permissions" Florence cites for its open API. Endpoints are modeled
+    from public statements; no public API reference is published. Partner/customer-gated
+    access.
+- aid: florence-ebinder:florence-tasks-workflows-api
+  name: Florence Tasks and Workflows API
+  tags:
+  - Tasks
+  - Workflows
+  - Automation
+  - Site Enablement
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.florencehc.com/products/sitelink/
+  endpointsModeled: true
+  properties:
+  - url: https://www.florencehc.com/products/sitelink/
+    type: Documentation
+  description: Modeled logical API for operational tasks and workflow automation
+    (site startup, monitoring, source data verification) that SiteLink orchestrates
+    across sites, sponsors, and CROs. Endpoints are modeled from Florence's public
+    product descriptions; no public API reference is published. Partner/customer-gated
+    access.
+common:
+- type: Website
+  url: https://www.florencehc.com/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/florence-healthcare
+- type: GitHubOrganization
+  url: https://github.com/FlorenceHC
+- type: Documentation
+  url: https://www.florencehc.com/products/sitelink/
+- type: SignUp
+  url: https://www.florencehc.com/sign-in-4/
+- type: Contact
+  url: https://www.florencehc.com/contact/
+- type: Pricing
+  url: https://www.florencehc.com/products/ebinders/
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
