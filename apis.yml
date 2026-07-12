@@ -128,6 +128,8 @@ apis:
     product descriptions; no public API reference is published. Partner/customer-gated
     access.
 common:
+- type: DomainSecurity
+  url: security/florence-ebinder-domain-security.yml
 - type: Website
   url: https://www.florencehc.com/
 - type: LinkedIn
