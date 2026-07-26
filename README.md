@@ -37,20 +37,10 @@ The APIs listed below are **logical APIs modeled** from Florence's public statem
 
 ## APIs (Modeled)
 
-### Florence Documents and Binders API
-Modeled logical API for the eBinders eISF and participant binder structure — creating and organizing binders, folders, and placeholders, and inbound/outbound exchange of regulatory and source documents between sites, sponsors, and CROs.
 
-### Florence Signatures and Compliance API
-Modeled logical API for compliant electronic signature and audit-trail workflows on regulatory documents (21 CFR Part 11 / GxP), including signature requests, signing, and document status/compliance reporting.
 
-### Florence Studies and Sites API
-Modeled logical API over the SiteLink network for managing studies, investigator sites, and cross-site document status reporting.
 
-### Florence Users and Permissions API
-Modeled logical API for connected management of users, roles, and permissions across the eBinders/SiteLink platform.
 
-### Florence Tasks and Workflows API
-Modeled logical API for operational tasks and workflow automation (site startup, monitoring, source data verification) orchestrated by SiteLink.
 
 ## Pricing
 
