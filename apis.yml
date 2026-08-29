@@ -1,5 +1,8 @@
 aid: florence-ebinder
 url: https://raw.githubusercontent.com/api-evangelist/florence-ebinder/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "Access to the API is partner- and customer-gated - it is granted through Florence's integration and partnership programs rather than a self-service public developer portal, and no public API reference"
 name: Florence Healthcare
 kind: company
 description: Florence Healthcare provides eRegulatory and clinical-trial site enablement software for research sites, sponsors, and CROs. Its eBinders product is an electronic investigator site file (eISF) and participant binder platform that replaces paper regulatory binders with structured, compliant, 21 CFR Part 11 workflows; eTMF manages the sponsor-side trial master file; and SiteLink connects a network of 10,000+ investigator sites across 44+ countries to sponsors and CROs for remote site access, monitoring, document exchange, and source data verification. Florence describes an "open API" for eBinders, eTMF, and SiteLink that supports connected management of roles and permissions, inbound and outbound document exchange, and document status reporting across regulatory and source documents. Access to the API is partner- and customer-gated - it is granted through Florence's integration and partnership programs rather than a self-service public developer portal, and no public API reference, OpenAPI description, or base URL is published as of this writing.
