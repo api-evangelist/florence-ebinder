@@ -38,7 +38,7 @@ tags:
   - Clinical Research
   - Healthcare
   - Life Sciences
-  - Document-Management
+  - Document Management
   - Partner API
 tags_raw:
   - Clinical Trials
@@ -51,6 +51,7 @@ tags_raw:
   - Life Sciences
   - Document Management
   - Partner API
+  - Document-Management
 created: '2026-07-05'
 modified: '2026-07-25'
 specificationVersion: '0.23'
