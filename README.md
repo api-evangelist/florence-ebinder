@@ -1,4 +1,4 @@
-# Florence Healthcare (florence-ebinder)
+# Florence Healthcare
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,66 +64,83 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Florence Healthcare provides eRegulatory and clinical-trial site enablement software for research sites, sponsors, and CROs. **eBinders** is an electronic investigator site file (eISF) and participant binder platform that replaces paper regulatory binders with structured, compliant, 21 CFR Part 11 workflows; **eTMF** manages the sponsor-side trial master file; and **SiteLink** connects a network of 10,000+ investigator sites across 44+ countries to sponsors and CROs for remote site access, monitoring, document exchange, and source data verification.
+Florence Healthcare provides eRegulatory and clinical-trial site enablement software for research sites, sponsors, and CROs. Its eBinders product is an electronic investigator site file (eISF) and participant binder platform that replaces paper regulatory binders with structured, compliant, 21 CFR Part 11 workflows; eTMF manages the sponsor-side trial master file; and SiteLink connects a network of 10,000+ investigator sites across 44+ countries to sponsors and CROs for remote site access, monitoring, document exchange, and source data verification. Florence describes an "open API" for eBinders, eTMF, and SiteLink that supports connected management of roles and permissions, inbound and outbound document exchange, and document status reporting across regulatory and source documents. Access to the API is partner- and customer-gated - it is granted through Florence's integration and partnership programs rather than a self-service public developer portal, and no public API reference, OpenAPI description, or base URL is published as of this writing.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/florence-ebinder/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/florence-ebinder/refs/heads/main/apis.yml)
+**Areas:** Clinical Trials · eRegulatory · eISF · eBinders · eTMF · Clinical Research · Healthcare · Life Sciences · Document Management · Partner API
 
-## Access Model — Important
+## Florence Healthcare on APIs.io
 
-This is an **honest gated stub**. Florence repeatedly describes an **"open API"** for eBinders, eTMF, and SiteLink — supporting connected management of roles and permissions, inbound and outbound document exchange, and document status reporting across regulatory and source documents. **However, that API is partner- and customer-gated.** As of this writing there is:
+Everything profiled for Florence Healthcare is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/florence-ebinder/](https://apis.io/providers/florence-ebinder/)** — or go straight to one of the APIs or properties below.
 
-- **No public developer portal**
-- **No public API reference**
-- **No published OpenAPI description**
-- **No published base URL, authentication, sandbox, or rate-limit documentation**
+### Published properties
 
-Access is provisioned through Florence's integration and partnership programs, not self-service signup. A third-party tracker ([apitracker.io](https://apitracker.io/a/florencehc)) lists a "Native REST API," but its developer-portal and API-reference links resolve to placeholder pages — confirming there is no open public documentation. The [FlorenceHC GitHub org](https://github.com/FlorenceHC) holds only general-purpose and archived forked repos, not a product SDK or API spec.
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-The APIs listed below are **logical APIs modeled** from Florence's public statements about its open API and SiteLink capabilities. Endpoint paths, base URLs, and an OpenAPI surface were **not fabricated** — each modeled API is flagged `endpointsModeled: true` in `apis.yml`. No `openapi/`, `plans/`, `rate-limits/`, `finops/`, or `collections/` artifacts were created because no sourced technical detail exists.
+#### Security (1)
 
-## Tags
+Authentication, trust centre, and vulnerability disclosure.
 
-- Clinical Trials
-- eRegulatory
-- eISF
-- eBinders
-- eTMF
-- Clinical Research
-- Healthcare
-- Life Sciences
-- Document Management
-- Partner API
+- [Florence Ebinder Domain Security](https://apis.io/security/florence-ebinder/florence-ebinder-domain-security/)
 
-## Timestamps
+## Where to find this API
 
-- **Created:** 2026-07-05
-- **Modified:** 2026-07-05
-
-## APIs (Modeled)
-
-
-
-
-
-
-## Pricing
-
-Not published. Florence prices eBinders/SiteLink by quote based on study profile and organizational dynamics; sponsors typically reimburse sites for eBinders on a per-trial basis. Contact Florence sales for a quote.
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.florencehc.com/)
-- [LinkedIn](https://www.linkedin.com/company/florence-healthcare)
-- [GitHub Organization](https://github.com/FlorenceHC)
 - [Documentation](https://www.florencehc.com/products/sitelink/)
-- [Sign In](https://www.florencehc.com/sign-in-4/)
-- [Contact](https://www.florencehc.com/contact/)
+- [Pricing](https://www.florencehc.com/products/ebinders/)
+- [Sign up](https://www.florencehc.com/sign-in-4/)
+- [GitHub](https://github.com/FlorenceHC)
 
-## WebSocket Review
+## API Evangelist rating
 
-Does Florence Healthcare expose a documented public WebSocket API? **No.** Florence publishes no public WebSocket surface — and no public REST API description of any kind. See `review.yml` for the full assessment.
+**Kin Score 10.7** — minimal · rubric 0.24.0 · scored 2026-10-17
 
-## Maintainers
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 9.5 |
+| Access clarity | 23.7 |
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 4.7** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/florence-ebinder/](https://apis.io/providers/florence-ebinder/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Florence Healthcare: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/florence-ebinder/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
